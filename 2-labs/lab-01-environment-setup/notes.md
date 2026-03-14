@@ -24,3 +24,32 @@ This setup is enough for beginner and intermediate Kubernetes practice on a loca
 kubectl version --client
 minikube version
 docker version
+Expected Outcome
+
+After setup is complete, I should be able to:
+	•	start a local Kubernetes cluster
+	•	check cluster status
+	•	list nodes
+	•	apply YAML manifests
+
+Personal Notes
+
+This lab is the foundation of the entire repository.
+If the environment is clean and stable, the rest of the practice becomes much easier.
+---
+
+# 9) `02-labs/lab-02-first-pod/pod.yaml`
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    app: nginx
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:latest
+      ports:
+        - containerPort: 80
