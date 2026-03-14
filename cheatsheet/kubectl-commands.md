@@ -22,17 +22,7 @@ Output Formats
 kubectl get pods -o yaml
 kubectl get pods -o json
 
-kubectl-commands.md
-```md
-# File: README.md
+Helpful Tip
 
-## Skills Practiced
-
-- Kubernetes fundamentals
-- kubectl usage
-- YAML manifest writing
-- local cluster management
-- workload inspection and debugging
-- technical note-taking
-
-'''
+kubectl describe is useful when a resource is created but not working as expected.
+It often shows events and scheduling-related errors.
